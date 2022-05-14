@@ -1,52 +1,49 @@
-// function soma(a , b){
-//     return a + b
-// }
+function soma(a , b){
+    return a + b
+}
 
-// function testeSoma (){
-//     let resultado = soma(5,7)
-//     let esperado = 12
+function testeSoma (){
+    let resultado = soma(5,7)
+    let esperado = 12
+    
 
-//     if( resultado === esperado){
-//         console.log("passou")
-//     } else {
-//         console.log("falhou")
-//     }
-// }
+    if( resultado === esperado){
+        console.log("passou")
+    } else {
+        console.log("falhou")
+    }
+}
 
-// testeSoma()
+testeSoma()
 
-// let terreno = {
-//     area: 305,
-//     valor: 100000,
-//     localidade: "Eusébio",
-//     taVendido: false
-// }
+let terreno = {
+    area: 305,
+    valor: 100000,
+    localidade: "Eusébio",
+    taVendido: false
+}
 
-// function testeTerreno(){
-//     console.assert(terreno.area === 305, {
-//         esperado: 305, 
-//         recebido: terreno.area
-//     })
-//     console.assert(terreno.valor === 100000, {
-//         esperado: 100000, 
-//         recebido: terreno.valor
-//     })
-//     console.assert(terreno.localidade === "Eusébio", {
-//         esperado: "Eusébio", 
-//         recebido: terreno.localidade
-//     })
-//     console.assert(terreno.taVendido === false, {
-//         esperado: false, 
-//         recebido: terreno.taVendido
-//     })
-// }
+function testeTerreno(){
+    console.assert(terreno.area === 305, {
+        esperado: 305, 
+        recebido: terreno.area
+    })
+    console.assert(terreno.valor === 100000, {
+        esperado: 100000, 
+        recebido: terreno.valor
+    })
+    console.assert(terreno.localidade === "Eusébio", {
+        esperado: "Eusébio", 
+        recebido: terreno.localidade
+    })
+    console.assert(terreno.taVendido === false, {
+        esperado: false, 
+        recebido: terreno.taVendido
+    })
+}
 
-// testeTerreno()
+testeTerreno()
 
-
-/**
- * 
- */
 
 function titulo(){
     const tituloH1 = document.createElement("h1")
@@ -62,7 +59,6 @@ function testeTitulo(){
     console.assert(resultado.innerText === "Texto na tela", `O teste falhou, e o resultado esperado era: "Texto na tela", E o resultado recebido foi: ${resultado.innerText} `)
     console.assert(resultado.nodeName === "H1", `O Teste falhou, e o resultado esperado era: "H1". E o resultado recebido foi: ${resultado.nodeName}`)
     console.assert(resultado.className === "titulo", `O Teste falhou, e o resultado esperado era: "titulo". E o resultado recebido foi: ${resultado.className}`)
-    
 }
 
 testeTitulo()
