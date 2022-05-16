@@ -5,7 +5,7 @@ function soma(a , b){
 function testeSoma (){
     let resultado = soma(5,7)
     let esperado = 12
-    
+
 
     if( resultado === esperado){
         console.log("passou")
@@ -15,6 +15,7 @@ function testeSoma (){
 }
 
 testeSoma()
+let casa 
 
 let terreno = {
     area: 305,
